@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--<parent>-->
+        <!--<groupId>com.yy</groupId>-->
+        <!--<artifactId>base</artifactId>-->
+        <!--<version>1.0-SNAPSHOT</version>-->
+    <!--</parent>-->
+
+    <parent>
+        <groupId>com.yy</groupId>
+        <artifactId>com-yy-dependencies</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>com-yy-emp</artifactId>
+    <packaging>pom</packaging>
+    <version>${emp-version}</version>
+    <modules>
+        <module>com-yy-emp-model</module>
+        <module>com-yy-emp-api</module>
+        <module>com-yy-emp-service</module>
+        <module>com-yy-emp-web</module>
+        <module>com-yy-emp-dao</module>
+    </modules>
+
+    <properties>
+        <emp-version>1.0-SNAPSHOT</emp-version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.yy</groupId>
+                <artifactId>com-yy-emp-api</artifactId>
+                <version>${emp-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yy</groupId>
+                <artifactId>com-yy-emp-model</artifactId>
+                <version>${emp-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yy</groupId>
+                <artifactId>com-yy-emp-service</artifactId>
+                <version>${emp-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yy</groupId>
+                <artifactId>com-yy-emp-dao</artifactId>
+                <version>${emp-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <distributionManagement>
+        <repository>
+            <id>local_releases</id>
+            <name>Nexus Release Repository</name>
+            <url>http://192.168.137.129:8082/nexus/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>local_snapshots</id>
+            <name>Nexus Snapshot Repository</name>
+            <url>http://192.168.137.129:8082/nexus/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
