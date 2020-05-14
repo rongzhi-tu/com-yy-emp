@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="com-yy-emp-api" />
+        <module name="com-yy-emp-dao" />
+        <module name="com-yy-emp-model" />
+        <module name="com-yy-emp-service" />
+        <module name="com-yy-emp-web" />
+        <module name="com-yy-model" />
+        <module name="com-yy-web" />
+        <module name="service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="com-yy-api" target="1.8" />
+      <module name="com-yy-dao" target="1.8" />
+      <module name="com-yy-emp" target="1.8" />
+      <module name="com-yy-emp-api" target="1.8" />
+      <module name="com-yy-emp-dao" target="1.8" />
+      <module name="com-yy-emp-model" target="1.8" />
+      <module name="com-yy-emp-service" target="1.8" />
+      <module name="com-yy-emp-web" target="1.8" />
+      <module name="com-yy-model" target="1.8" />
+      <module name="com-yy-service" target="1.8" />
+      <module name="com-yy-web" target="1.8" />
+      <module name="service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
