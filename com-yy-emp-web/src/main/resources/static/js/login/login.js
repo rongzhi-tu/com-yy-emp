@@ -1,13 +1,10 @@
 /**
  * Created by tuz on 2020/5/11.
  */
+layui.use([],function () {
+        var form = layui.form;
 
-window.onload = function () {
-    // try {
-    //     //document.getElementById("inputMacAddr").value = "abc";//js原生写法
-    //     // document.getElementById("macAddr").innerText = "abc";
-    //     $("#inputMacAddr").val(MacInfo());
-    // }catch (e){
-    //     alert(e);
-    // }
-};
+        form.render();
+    }
+);
+

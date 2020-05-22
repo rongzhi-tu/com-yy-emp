@@ -8,9 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/com-yy-emp-model/com-yy-emp-model.iml" filepath="$PROJECT_DIR$/com-yy-emp-model/com-yy-emp-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-yy-emp-service/com-yy-emp-service.iml" filepath="$PROJECT_DIR$/com-yy-emp-service/com-yy-emp-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/com-yy-emp-web/com-yy-emp-web.iml" filepath="$PROJECT_DIR$/com-yy-emp-web/com-yy-emp-web.iml" />
-      <module fileurl="file://D:\yyWorks\com-yy-emp\com-yy-model\com-yy-model.iml" filepath="D:\yyWorks\com-yy-emp\com-yy-model\com-yy-model.iml" />
-      <module fileurl="file://D:\yyWorks\com-yy-emp\com-yy-web\com-yy-web.iml" filepath="D:\yyWorks\com-yy-emp\com-yy-web\com-yy-web.iml" />
-      <module fileurl="file://D:\yyWorks\com-yy-emp\com-yy-emp-service\service.iml" filepath="D:\yyWorks\com-yy-emp\com-yy-emp-service\service.iml" />
     </modules>
   </component>
 </project>

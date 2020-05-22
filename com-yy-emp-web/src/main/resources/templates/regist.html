@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Register</title>
+    <link rel="shortcut icon" th:href="@{/favicon.ico}">
+    <!-- layui core CSS -->
+    <link th:href="@{/webjars/layui/2.5.6/css/layui.css}" rel="stylesheet">
+    <script th:src="@{/webjars/layui/2.5.6/layui.js}"></script>
+    <script th:src="@{/js/login/login.js}" type="application/javascript"></script>
+    <!--<script th:src="@{/webjars/jquery/3.3.1-1/jquery.js}" type="application/javascript"></script>-->
+</head>
+    <body class="text-center">
+    <header class="layui-elip" style="width: 82%">[[#{regist.tip}]]</header>
+
+    <form class="layui-form" th:action="@{/user/regist}" method="post">
+            <!--<input type="hidden" name="uri" th:value="${#httpServletRequest.getAttribute('uri')}">-->
+            <label for="inputName" class="sr-only" th:text="#{regist.name}"></label>
+            <input  id="inputName" name="name" class="form-control" th:placeholder="#{regist.name}"
+                    style="margin-bottom: 10px" required autofocus>
+
+            <label for="inputPassword" class="sr-only" th:text="#{regist.Password}"></label>
+            <input type="password" id="inputPassword"  name="password" class="form-control"
+                   th:placeholder="#{regist.Password}" required>
+            <label for="inputPassword2" class="sr-only" th:text="#{regist.retry}"></label>
+            <input type="password" id="inputPassword2"  name="password2" class="form-control"
+                   th:placeholder="#{regist.retry}" required>
+            <label for="inputEmail" class="sr-only" th:text="#{regist.email}"></label>
+            <input type="email" id="inputEmail"  name="email" class="form-control"
+                   th:placeholder="#{regist.email}" required>
+            <span>
+            <label for="inputVerify" class="sr-only" th:text="验证码"></label>
+                <input type="text" id="inputVerify"  style="width: 54%"
+                       class="form-control" th:placeholder="#{regist.VerifyCode}" required>
+                <!--加时间戳，防止浏览器利用缓存-->
+                <img alt="验证码" id="imgVerify"
+                     src="http://localhost:8080/com-yy-sso/verifimg?date='+Date.now()"
+                     style="cursor: pointer; margin-top:3px;width: 45%" th:attr="data-ssoBaseurl=#{sso.baseurl}"
+                     onclick="this.src=this.data('ssoBaseurl')+ 'verifimg?date='+Date.now()">
+            </span>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" th:text="#{regist.btnRegist}" style="margin-top: 35px"></button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+            <a class="btn btn-sm" th:href="@{/regist(l='zh_CN')}">中文</a>
+            <a class="btn btn-sm" th:href="@{/regist(l='en_US')}">English</a>
+        </form>
+    </body>
+
+</html>

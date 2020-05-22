@@ -58,6 +58,7 @@
     <orderEntry type="library" name="Maven: org.webjars:jquery:3.3.1-1" level="project" />
     <orderEntry type="library" name="Maven: org.webjars:bootstrap:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.webjars.npm:popper.js:1.11.1" level="project" />
+    <orderEntry type="library" name="Maven: org.webjars:layui:2.5.6" level="project" />
     <orderEntry type="module" module-name="com-yy-emp-api" />
     <orderEntry type="library" name="Maven: com.yy:com-yy-emp-model:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />

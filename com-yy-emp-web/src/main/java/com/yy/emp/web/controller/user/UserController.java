@@ -7,6 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -21,9 +22,14 @@ public class UserController extends BaseController {
         session.setAttribute("currentUser",new User());
         return "main";
     }
+
+    @GetMapping("/regist")
+    public String regist(HttpSession session){
+        return "regist";
+    }
     //	  用户注册   post
     @PostMapping("/user/regist")
-    public String regist(User user,Model model){
+    public String regist(HttpServletRequest request,User user, Model model){
         userService.register(user);
         return get(user.getId(),model);
     }
