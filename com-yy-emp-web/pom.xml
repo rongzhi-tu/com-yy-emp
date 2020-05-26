@@ -70,6 +70,10 @@
             <groupId>com.yy</groupId>
             <artifactId>com-yy-base</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.yy</groupId>
+            <artifactId>com-yy-sso</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

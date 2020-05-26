@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.yy:com-yy-base:1.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/yy/com-yy-base/1.0-SNAPSHOT/com-yy-base-1.0-20200522.021721-11.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/yy/com-yy-base/1.0-SNAPSHOT/com-yy-base-1.0-SNAPSHOT.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/yy/com-yy-base/1.0-SNAPSHOT/com-yy-base-1.0-20200522.021721-11-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/yy/com-yy-base/1.0-SNAPSHOT/com-yy-base-1.0-SNAPSHOT-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/yy/com-yy-base/1.0-SNAPSHOT/com-yy-base-1.0-20200522.021721-11-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/yy/com-yy-base/1.0-SNAPSHOT/com-yy-base-1.0-SNAPSHOT-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
